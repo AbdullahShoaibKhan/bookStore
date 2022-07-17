@@ -13,6 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"cd client && npm run build",
+    "install-client":"cd client && npm install",
     "start":"node index.js",
     "client":"cd client && npm start",
     "dev":"concurrently -o 'index,client' -c 'red,green' \"nodemon index.js\" \"npm run client\""
