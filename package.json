@@ -13,12 +13,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client-install":"npm install --prefix client",
+   "build":"cd client && npm run build",
+   "install-client":"cd client && npm install",
+   "heroku-postbuild":"npm run install-client && npm run build ",
     "start":"node index.js",
-    "server":"nodemon index.js",
-    "client":"npm client --prefix client",
-    "dev":"concurrently -o 'index,client' -c 'red,green' \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false cd client && npm install --prefix client && npm run build --prefix client"
+    "client":"cd client && npm start",
+    "dev":"concurrently -o 'index,client' -c 'red,green' \"nodemon index.js\" \"npm run client\""
   },
   "repository": {
     "type": "git",
