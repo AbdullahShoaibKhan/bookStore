@@ -29,12 +29,13 @@ const deleteBook = async(req,res)=>{
     }
 }
 const findBook = async(req,res)=>{
+    let book
     try{
-        const book = await Book.findById(req.params.id);
-           await res.json(200).json(book)
+       book = await Book.findById(req.params.id);
     }catch(err){
         res.json(500).json(err)
     }
+    return res.status(200).json({book})
 }
 const findAllBook = async(req,res)=>{
     let book;

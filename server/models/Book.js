@@ -12,7 +12,7 @@ const BookSchema = new mongoose.Schema(
         },
         Genre:{
             type:String,
-            required: false,
+            required: true,
         },
         Desc:{
             type:String,
@@ -24,8 +24,9 @@ const BookSchema = new mongoose.Schema(
             type: Number,
             required: true,   
         },
-        PublishedAt:{
-            type: Date,
+        PublishedBy:{
+            type:String,
+            required: true,
         },
         
     },

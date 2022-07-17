@@ -1,5 +1,6 @@
 const router = require("express").Router();
-const {addBook , updateBook , deleteBook , findBook, findAllBook } = require("../controller/controller.js");
+const { addBook , updateBook , deleteBook ,
+        findBook, findAllBook } = require("../controller/controller.js");
 
 //add a book
 router.post("/add", addBook);
