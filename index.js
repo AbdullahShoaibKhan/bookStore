@@ -24,6 +24,6 @@ mongoose.connect('mongodb+srv://abdullah:236bscs@cluster0.mbzm0.mongodb.net/node
         .catch((err)=>console.log(err));
 
 // app.use("/", router);
-app.listen(3000,()=>{
+app.listen(5000,()=>{
     console.log("live on port");
 });
