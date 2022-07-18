@@ -47,7 +47,7 @@ const sendData= async ()=>{
     Price:Number(inputs.Price),
     PublishedBy:String(inputs.PublishedBy),
   })
-  .then((res)=>(console.log(res.data))).then(()=>{navigate('/books')}).catch(function (error) {
+  .then((res)=>(console.log(res.data))).then(()=>{navigate('/home')}).catch(function (error) {
     if (error.response) {
       // The request was made and the server responded with a status code
       // that falls out of the range of 2xx
