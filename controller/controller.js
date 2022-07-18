@@ -1,9 +1,9 @@
 const Book = require("../models/Book");
 
 const addBook= async(req,res)=>{
-    const {BookName,Author,Desc,Price,PublishedAt,Image} =req.body
+    const {BookName,Author,Genre,Desc,Price,PublishedBy} =req.body
     try{
-        const savedBook = await Book.create({BookName,Author,Desc,Price,PublishedAt,Image});
+        const savedBook = await Book.create({BookName,Author,Genre,Desc,Price,PublishedBy});
         res.status(200).json(savedBook).json({message:"book saved"});
     }catch(err){
         res.status(500).json(err).json({message:"book not saved"});
