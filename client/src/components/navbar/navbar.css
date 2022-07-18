@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+ul{
+  overflow: hidden;
+  background-color:hsl(0, 79%, 8%) ;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+li{
+float: left;
+}
+li a, .dropbtn{
+  display: block;
+  color: #f2f2f2;
+  text-align:center;
+  margin:0px;
+  padding:15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover{
+  background-color: red;
+}
+/* @media only screen and {max-width: ;
+  
+} */

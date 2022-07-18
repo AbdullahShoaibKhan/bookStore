@@ -1,0 +1,43 @@
+#card {
+    margin: 10px auto;
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    color: aliceblue;
+    background-color:hsl(0, 79%, 8%) ;
+    box-shadow: 5px 5px 10px #ccc;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start;
+    align-content: flex-start; */
+  }
+  .card h3 {
+    padding: 4px;
+  }
+  .card:hover{
+    background-color:hsl(0, 64%, 17%) ;
+    box-shadow: 5px 5px 5px  rgb(236, 198, 198);
+  }
+  button{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 0px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom:3px ;
+    justify-content: center;
+    
+}
+button:hover{
+  font-size:17px ;
+  padding:4px 0px ;
+}
+@media only screen and (max-width:400px){
+  #card{
+    width: 70%;
+  }
+}
