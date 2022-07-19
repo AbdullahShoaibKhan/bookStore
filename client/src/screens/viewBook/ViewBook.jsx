@@ -10,7 +10,7 @@ function ViewBook(props) {
   // console.log(location.state.name,2);
  
   const handleDelete= async ()=>{
-    await axios.delete(`http://localhost:5000/books/${location.state.id}`)
+    await axios.delete(`https://cryptic-oasis-24684.herokuapp.com/books/${location.state.id}`)
     .then((res)=>console.log(res.data,"inside")).then(()=>{navigate('/books')}).catch(function (error) {
       if (error.response) {
         // The request was made and the server responded with a status code

@@ -24,7 +24,7 @@ export default function NewBook() {
   };
 
 const sendData= async ()=>{
-  await axios.post("http://localhost:5000/books/add",{
+  await axios.post("https://cryptic-oasis-24684.herokuapp.com/books/add",{
     BookName:String(inputs.BookName),
     Author:String(inputs.Author),
     Genre:String(inputs.Genre),

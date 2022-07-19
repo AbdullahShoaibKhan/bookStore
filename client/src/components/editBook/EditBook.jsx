@@ -14,7 +14,7 @@ export default function NewBook() {
   
   useEffect(() => {
     const fetchHandler = async () => {
-      await fetch(`http://localhost:5000/books/${location.state.id}`)
+      await fetch(`https://cryptic-oasis-24684.herokuapp.com/books/${location.state.id}`)
         .then((res) => res.json())
         .then((data)=>setInputs(data.book,1)).catch(function (error) {
             if (error.response) {
@@ -39,7 +39,7 @@ export default function NewBook() {
   }, [location.state.id]);
 
 const sendData= async ()=>{
-  await axios.put(`http://localhost:5000/books/${location.state.id}`,{
+  await axios.put(`https://cryptic-oasis-24684.herokuapp.com/books/${location.state.id}`,{
     BookName:String(inputs.BookName),
     Author:String(inputs.Author),
     Genre:String(inputs.Genre),
